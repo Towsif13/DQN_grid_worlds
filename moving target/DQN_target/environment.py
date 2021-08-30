@@ -212,7 +212,7 @@ class Environment:
     def step(self, action):
         self.iteration += 1
         # move the man
-        if self.iteration % 3 == 0:
+        if self.iteration % 2 == 0:
             self.man_x, self.man_y = self.man.move_man(
                 self.man_x, self.man_y, BLOCK_SIZE, 'left')
 
