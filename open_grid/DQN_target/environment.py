@@ -1,6 +1,9 @@
 from collections import namedtuple
 import pygame
 import numpy as np
+import os
+
+os.environ["SDL_VIDEODRIVER"] = "dummy"
 
 BLOCK_SIZE = 40
 WIDTH = 400
