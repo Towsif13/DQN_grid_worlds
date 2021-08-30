@@ -1,1 +1,1 @@
-{"algorithm": "DQN_moving_target", "eps_start": 1.0, "eps_end": 0.01, "eps_decay": 0.999914, "episodes": 50000, "train_time": "Execution time: 0 hours : 09 minutes : 20 seconds"}
+{"algorithm": "DQN_moving_target", "eps_start": 1.0, "eps_end": 0.01, "eps_decay": 0.99995, "episodes": 100000, "train_time": "Execution time: 0 hours : 23 minutes : 55 seconds"}

@@ -12,11 +12,11 @@ env = Environment()
 
 agent = Agent(state_size=2, action_size=4, seed=3)
 
-n_episodes = 10_000
+n_episodes = 100_000
 max_t = 200
 eps_start = 1.0
 eps_end = 0.01
-eps_decay = 0.995  # 0.999936
+eps_decay = 0.99995  # 0.999936
 
 
 def dqn(n_episodes=n_episodes, max_t=max_t, eps_start=eps_start, eps_end=eps_end, eps_decay=eps_decay):
