@@ -5,7 +5,7 @@ import seaborn as sns
 
 eps = 1.0
 eps_end = 0.01
-eps_decay = 0.99992
+eps_decay = 0.99995
 e = []
 for i in range(100_000):
     eps = max(eps_end, eps_decay*eps)

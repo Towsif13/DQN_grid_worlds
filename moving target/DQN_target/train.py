@@ -1,5 +1,4 @@
 import json
-from environment import Environment
 import torch
 from agent import Agent
 from environment import Environment
