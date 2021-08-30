@@ -37,8 +37,8 @@ def dqn():
             action = agent.act(state, eps)
             next_state, reward, done = env.step(action)
             agent.step(state, action, reward, next_state, done)
-            env.render()
-            time.sleep(1)
+            # env.render()
+            # time.sleep(1)
             state = next_state
             score += reward
 
