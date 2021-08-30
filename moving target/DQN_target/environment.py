@@ -3,7 +3,7 @@ import pygame
 import numpy as np
 import os
 
-os.environ["SDL_VIDEODRIVER"] = "dummy"
+# os.environ["SDL_VIDEODRIVER"] = "dummy"
 
 BLOCK_SIZE = 40
 WIDTH = 400
@@ -94,6 +94,7 @@ BLUE2 = (0, 100, 255)
 BLACK = (0, 0, 0)
 GREY = (224, 224, 224)
 GREEN = (0, 128, 0)
+YELLOW = (255, 255, 0)
 
 
 class Drone:
@@ -232,12 +233,17 @@ class Environment:
                 rect = pygame.Rect(x, y, BLOCK_SIZE, BLOCK_SIZE)
                 pygame.draw.rect(self.display, BLACK, rect, 1)
 
-    def render(self):
+    def render(self, trail=[]):
         self.display.fill(GREY)
 
         # for x, y in OBSTACLES_XY:
         #     pygame.draw.rect(self.display, GREEN,
         #                      (x, y, BLOCK_SIZE, BLOCK_SIZE), 0)
+
+        if len(trail) > 0:
+            for (x, y) in trail:
+                pygame.draw.rect(self.display, YELLOW,
+                                 (x, y, BLOCK_SIZE, BLOCK_SIZE), 0)
 
         self.drawGrid()
 
