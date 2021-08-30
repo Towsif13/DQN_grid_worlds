@@ -10,7 +10,7 @@ import time
 
 env = Environment()
 
-agent = Agent(state_size=2, action_size=4, seed=13)
+agent = Agent(state_size=2, action_size=4, seed=3)
 
 n_episodes = 10_000
 max_t = 200
