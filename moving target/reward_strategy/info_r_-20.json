@@ -1,0 +1,1 @@
+{"algorithm": "DQN_moving_target_reward", "eps_start": 1.0, "eps_end": 0.01, "eps_decay": 0.99995, "episodes": 100000, "train_time": "Execution time: 1 hours : 18 minutes : 56 seconds", "len1": 1337048, "len3": 1148563, "loss": -20, "pop counter": 1000}
