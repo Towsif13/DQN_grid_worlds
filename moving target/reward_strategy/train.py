@@ -10,7 +10,7 @@ from environment import Environment
 
 env = Environment()
 
-agent = Agent(state_size=2, action_size=4, seed=3)
+agent = Agent(state_size=2, action_size=4, seed=5)
 
 n_episodes = 100_000
 max_t = 200
