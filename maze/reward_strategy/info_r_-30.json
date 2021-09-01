@@ -1,0 +1,1 @@
+{"algorithm": "DQN_maze_reward", "eps_start": 1.0, "eps_end": 0.01, "eps_decay": 0.99995, "episodes": 100000, "train_time": "Execution time: 2 hours : 38 minutes : 45 seconds", "len1": 2502181, "len3": 2234997, "loss": -30, "pop counter": 1000}
