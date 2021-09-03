@@ -46,8 +46,8 @@ def dqn():
         scores.append(score)
         eps = max(eps_end, eps_decay*eps)  # decrease epsilon
         #print("\nRewards: ",reward,"\n")
-        print('\rEpisode {}\tAverage Score: {:.2f}'.format(
-            i_episode, np.mean(scores_window)), end="")
+        print('\rEpisode {}\tAverage Score: {:.2f}\tMem1 {}\tMem2 {}'.format(
+            i_episode, np.mean(scores_window),agent.lenmem1,agent.lenmem2), end="")
         if i_episode % 100 == 0:
             print('\rEpisode {}\tAverage Score: {:.2f}'.format(
                 i_episode, np.mean(scores_window)))
